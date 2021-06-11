@@ -1,17 +1,33 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Navbar />
+    <Header />
+    <About />
+    <Portfolio />
+    <Contact />
+    <Social />
+    <Footer />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Header from './components/Header.vue'
+import Footer from './components/Footer.vue'
+import About from './components/About.vue'
+import Portfolio from './components/Portfolio.vue'
+import Navbar from './components/Navbar.vue'
+import Contact from './components/Contact.vue'
+import Social from './components/Social.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header,
+    Footer,
+    About,
+    Portfolio,
+    Navbar,
+    Contact,
+    Social
   }
 }
 </script>
@@ -21,8 +37,22 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin: 0;
 }
+.component{
+  padding: 20px 0 50px;
+}
+.header1{
+  text-align: center;
+  margin: 0 0 20px;
+  margin: 20px
+}
+.gray{
+  background-color: rgb(248, 248, 248)  
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 </style>
